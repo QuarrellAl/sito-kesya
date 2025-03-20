@@ -1,0 +1,114 @@
+body{
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+header{
+    background-color: black;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p a {
+    padding: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+
+header nav ul {
+    margin: 0;
+    padding: 30px;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header nav a:hover{
+    color: #7a7a7a;
+    text-decoration: underline;
+}
+
+section.info h1{
+    margin-left: 28px;
+    margin-top: 100px;
+   text-align: left;
+   color: #ffffff;
+   font-size: 40pt;
+}
+
+section.card div{
+    margin-left: 28px;
+    margin-top: 136px;
+    margin-right: 24px;
+    display: flex;
+    gap: 600px;   
+}
+section.card img{
+    height: 500px;
+}
+section.card div h2{
+    color: #ffffff;
+    font-size: 20pt;
+    margin-top: -8px;
+    margin-bottom: 50px;
+}
+section.card div p{
+    color: #ffffff;
+    font-size: 12pt;
+  }
+
+.footer{
+  
+    padding: 40px 0;
+    background-color: #ffffff;
+    margin-top: 150px;
+
+}
+@media (max-width:600px){
+    body{
+        background-color: #ffffff;
+    }
+    section.card div h2{
+        color: #000000;
+        font-size: 20pt;
+}
+section.info h1{
+    color: #000000;
+    font-size: 25pt;
+}
+section.card div p{
+    color: #000000;
+
+}
+section.card div{
+    margin-left: 28px;
+    margin-top: 136px;
+    margin-right: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;   
+}
+section.card img{
+        width: 100%;   
+        height: auto;   
+      }
+.footer{
+    background-color: #000000;
+}      
+}
